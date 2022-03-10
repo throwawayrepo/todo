@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Todo app</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <h1 class="title">Todo</h1>
+
+        <fieldset class="theme-toggle">
+          <label
+            ><input
+              type="radio"
+              name="theme"
+              value="dark"
+              class="theme-radio"
+              checked
+            />
+            <img
+              class="theme-icon visible"
+              src="images/icon-sun.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </label>
+          <label
+            ><input
+              type="radio"
+              name="theme"
+              value="light"
+              class="theme-radio"
+            />
+            <img
+              class="theme-icon"
+              src="images/icon-moon.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </label>
+        </fieldset>
+      </header>
+      <form class="input-form" spellcheck="false">
+        <div class="input-circle"></div>
+        <input type="text" class="input" placeholder="Create a new todo..." />
+      </form>
+      <div class="todo-container">
+        <ul class="list-container" aria-live="polite"></ul>
+        <div class="filter">
+          <div class="action-bar">
+            <p class="remaining-items">5 items left</p>
+            <button type="button" class="clear">Clear Completed</button>
+          </div>
+          <div class="filter-container">
+            <button
+              type="button"
+              class="filter-selection active-filter"
+              data-filter="all"
+            >
+              All
+            </button>
+            <button type="button" class="filter-selection" data-filter="active">
+              Active
+            </button>
+            <button
+              type="button"
+              class="filter-selection"
+              data-filter="completed"
+            >
+              Completed
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <body></body>
+
+    <!-- Todo -->
+
+    <!-- Add dynamic number -->
+    <!-- items left All Active Completed Clear Completed Drag and drop to reorder
+    list -->
+  </body>
+</html>
+<!-- <div class="attribution">
+  Challenge by
+  <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+    >Frontend Mentor</a
+  >. Coded by <a href="#">Zero0K</a>.
+</div> -->
